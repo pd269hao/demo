@@ -1,6 +1,5 @@
-package com.yrd.demo.serviceribbon.controller;
+package com.yrd.demo.serviceribbonhystrix.controller;
 
-import com.yrd.demo.serviceribbonhystrix.service.DefaultService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class DefaultController {
 
     @Autowired
-    DefaultService defaultService;
+    com.yrd.demo.serviceribbonhystrix.service.DefaultService defaultService;
 
     @RequestMapping("/hi")
     public String sayHi(String name) {

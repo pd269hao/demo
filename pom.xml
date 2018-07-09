@@ -8,6 +8,9 @@
     <module>server-hi</module>
     <module>service-feign</module>
     <module>service-ribbon</module>
+    <module>service-ribbon-hystrix</module>
+    <module>service-feign-hystrix</module>
+    <module>service-zuul</module>
   </modules>
 
   <groupId>com.yrd.demo</groupId>
@@ -29,7 +32,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
-    <spring-cloud.version>Edgware.SR2</spring-cloud.version>
+    <spring-cloud.version>Edgware.SR4</spring-cloud.version>
   </properties>
 
   <dependencies>
