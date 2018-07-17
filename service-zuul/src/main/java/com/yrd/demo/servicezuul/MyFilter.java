@@ -45,7 +45,8 @@ public class MyFilter extends ZuulFilter {
         String ip = getIpAddr(request);
         log.info("请求源IP：" + ip);
 
-
+        if (ip.contains("0:0:0:0"))
+            ip = "127.0.0.1";
         if (!ipFilterService.isValidIp(ip)) {
             log.warn("非白名单ip，无法访问：" + ip);
             ctx.setSendZuulResponse(false);
