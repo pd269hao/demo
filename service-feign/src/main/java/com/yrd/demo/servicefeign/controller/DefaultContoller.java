@@ -1,6 +1,6 @@
 package com.yrd.demo.servicefeign.controller;
 
-import com.yrd.demo.servicefeignhystrix.service.ServiceHi;
+import com.yrd.demo.servicefeign.service.ServiceHi;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,7 +17,7 @@ public class DefaultContoller {
     @Autowired
     ServiceHi serviceHi;
 
-    @RequestMapping("fhi")
+    @RequestMapping("/fhi")
     public String sayHiFeign(String name) {
         return serviceHi.sayHiFromClient(name);
     }
