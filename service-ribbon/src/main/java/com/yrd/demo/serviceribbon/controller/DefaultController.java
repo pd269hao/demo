@@ -1,6 +1,6 @@
 package com.yrd.demo.serviceribbon.controller;
 
-import com.yrd.demo.serviceribbonhystrix.service.DefaultService;
+import com.yrd.demo.serviceribbon.service.DefaultService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

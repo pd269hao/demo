@@ -1,5 +1,7 @@
 package com.yrd.demo.servicefeign.controller;
 
+import com.yrd.common.BaseRequest;
+import com.yrd.common.Person;
 import com.yrd.demo.servicefeign.service.ServiceHi;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,5 +22,10 @@ public class DefaultContoller {
     @RequestMapping("/fhi")
     public String sayHiFeign(String name) {
         return serviceHi.sayHiFromClient(name);
+    }
+
+    @RequestMapping("/fhello")
+    public Person sayHelloFeign(String name) {
+        return serviceHi.sayHelloFromClient(BaseRequest.builder().param(name).build());
     }
 }

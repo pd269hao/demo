@@ -12,7 +12,7 @@ import org.springframework.web.client.RestTemplate;
 public class ServiceRibbonApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(com.yrd.demo.serviceribbonhystrix.ServiceRibbonApplication.class, args);
+        SpringApplication.run(ServiceRibbonApplication.class, args);
     }
 
     @Bean

@@ -13,6 +13,7 @@
     <module>service-feign-hystrix</module>
     <module>service-zuul</module>
     <module>boot</module>
+      <module>common</module>
   </modules>
 
   <groupId>com.yrd.demo</groupId>
