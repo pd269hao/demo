@@ -1,5 +1,6 @@
 package com.yrd.demo.servicefeign.controller;
 
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.yrd.common.BaseRequest;
 import com.yrd.common.Person;
 import com.yrd.demo.servicefeign.service.ServiceHi;

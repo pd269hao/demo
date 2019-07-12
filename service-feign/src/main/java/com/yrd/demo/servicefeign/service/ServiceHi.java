@@ -13,13 +13,13 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * Date:2018/7/4
  * Time:14:50
  */
-@FeignClient(value = "server-hi")
+@FeignClient(name = "myClient", value = "server-hi")
 public interface ServiceHi {
 
-    @RequestMapping(value = "hi",method = RequestMethod.GET)
+    @RequestMapping(value = "/hi", method = RequestMethod.GET)
     String sayHiFromClient(String name);
 
-    @PostMapping(value = "hello")
+    @PostMapping(value = "/hello")
     Person sayHelloFromClient(BaseRequest name);
 
 }
